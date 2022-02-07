@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { HiMenuAlt4 } from 'react-icons/hi';
-import { AiOutlineClose } from 'react-icons/ai-outline';
+import { AiOutlineClose } from 'react-icons/ai';
 
 import logo from '../../images/logo.png';
 
@@ -23,7 +23,7 @@ const Navbar = () => {
                 {['Market', 'Exchange', 'Tutorials', 'Wallets'].map((item, index) => (
                     <NavbarItem key={item +index} title={item}/>
                 ))}
-                <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full hover:bg-[#2546bd]">
+                <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full hover:bg-[#2546bd] cursor-pointer">
                     Login
                 </li>
             </ul>
@@ -42,7 +42,7 @@ const Navbar = () => {
                         {['Market', 'Exchange', 'Tutorials', 'Wallets'].map((item, index) => (
                         <NavbarItem key={item +index} title={item} classProps='my-2 text-lg' />
                         ))}
-                        <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full hover:bg-[#2546bd]">
+                        <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full hover:bg-[#2546bd] cursor-pointer">
                             Login
                         </li>
                     </ul>
